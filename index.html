@@ -1,0 +1,134 @@
+<!-- Tells the program reading the code that this code is written in HTML. -->
+<!DOCTYPE html>
+<!-- This is the opening tag for the HTML, meaning all tags and commands must be within this tag and its closing tag. -->
+<html>
+  <!-- The head contains information about the webpage that is not displayed in the actual webpage, but is more for the program to refer to. -->
+  <head>
+    <!-- These meta tags include information about the data in this code. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- The title tag defines the name of the webpage tab name.-->
+    <title>RST - Final Project</title>
+    <!-- The link tag seems to connect the HTML to the cascade styling sheet, CSS.-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!-- The body tag has code that is displayed on the webpage and is for the user to see. -->
+  <body>
+    <!--h tags are heading tags, ranging from 1-6, 1 being the largest heading size and 6 being the smallest.--> 
+    <h1 class="title">Matter-mations</h1>
+    <!-- p tags are paragraph tags, which contain regular text.-->
+    <p class="italics">An interactive and animated webpage to help you learn about the three states of matter.</p>
+    <!-- Classes help identify a group of tags. A class can be applied to more than one tag and can help with things like applying the same styling to multiple tags.-->
+    <p class="body-text">Welcome! This webpage will help you learn about the three states of matter: solid, liquid, and gas. We will look at how the molecules in these three states behave and how their behaviour differs from the other states.
+    <!--br tags are break lines, meaning they force a new line, which helps with things like adding spaces in between text while using the same paragraph tag.-->
+    <br>
+    <br>
+    Along the way, you will be able to see the differences for yourself with three interactive animations.
+    <br>
+    <br>
+    <!-- The b tag makes text bold. Bold text is only standard in heading tags, but not in paragraph text. Text can also be bold using CSS, but when you only want a few words or a sentence to be bold, this tag can be used. --> 
+    <b>Have Fun!</b>
+    <br>
+    <br>
+    Actually, before we begin, you should know that this webpage has a blue background option. If you want to change the background, click the button below. If you do not like it, click again to return to the white background.
+    </p>
+    <!--Button tags create clickable buttons that can perform a variety of functions using Javascript.-->
+    <button id="background" class="buttons">Change Background</button>
+    <h2 class="sub-titles">Solid</h2>
+    <!--Divs create an invisible box or container around everything inside them. Divs can also be used to style multiple tags by styling the div tag and giving it a class. -->
+    <div class="body-style">
+    <p class="body-text">A solid is quite possibly the simplest state of matter. The molecules in a solid are tightly compacted together, usually in some defined order or pattern. They form rigid objects that have a volume and shape that does not change as the molecules stay in their place, giving the object its solid shape and un-changeable volume. Of course, the molecules aren't completely frozen. They just don't move around enough to change anything about them like shape, volume, or rigidness. They sort of vibrate in one place. 
+    <br>
+    <br>
+    Solid molecules are quite boring. They barely move at all! Take a look at this diagram below to see how the molecules move in a solid object.
+    </p>
+    <br>
+    <br>
+    <div class="animations">
+    <!-- This iframe tag embeds the p5.js animation made in the p5 web editor. -->
+    <iframe src="https://editor.p5js.org/Hashir14/embed/Q8UBIZfZj" id="solid"></iframe>
+    </div>
+    <p class="description">Click and drag the mouse to create a shape of your choice and see how the solid molecules of your shape move around.</p>
+    </div>
+    <br>
+    <br>
+    <h2 class="sub-titles">Liquid</h2>
+    <div class="body-style">
+    <p class="body-text">
+    Liquids are essentially melted solids. When a solid melts, it becomes a liquid. For example, ice, a solid, becomes water, a liquid, when it is melted. The molecules in a liquid are spaced out enough so that they can move around and can go over and under each other. They also move around faster than the slight vibration of solid molecules. Liquids have no definite shape but still have a definite volume. This allows liquids to be poured into different containers. In fact, liquids will take the shape of whatever container they have been poured into, even though their volume remains the same.
+    <br>
+    <br>
+    Liquid molecules are a bit more interesting than solids. They move around more which gives them the ability to flow. They are also more spaced out than solids. Take a look at this diagram below to see how liquid molecules move.
+    </p>
+    <br>
+    <br>
+    <div class="animations">
+    <iframe src="https://editor.p5js.org/Hashir14/embed/ryVSF5WC6"id="liquid"></iframe>
+    </div>
+    <p class="description">Click on the canvas 20 times and see how liquid molecules move around. Compare that to the movement and spacing of solid molecules.</p>
+    </div>
+    <br>
+    <br>
+    <h2 class="sub-titles">Gas</h2>
+    <div class="body-style">
+    <p class="body-text">
+    Gas molecules, unlike solids or liquids, have neither a definite shape nor definite volume. This means that they are free-spirited and do not take the shape of any container. Gas molecules move much faster than solid or liquid molecules and are far more spaced out, allowing them to swirl and float around.
+    <br>
+    <br>
+    Gas molecules are great fun! They move around so quickly and they are spaced out so that they can swirl and flow over each other in beautiful motions. They are also much more spaced out than liquid molecules. Take a look at this diagram below to see how gas molecules move around.
+    </p>
+    <br>
+    <br>
+    <div class="animations">
+    <iframe src="https://editor.p5js.org/Hashir14/embed/dc_cJLvGh"id="gas"></iframe>
+    </div>
+    <p class="description">Click on the canvas 20 times to see the speed, movement, and spacing of gas molecules. Compare that to the solid and liquid animations.</p>
+    <br>
+    <br>
+    </div>
+    <br>
+    <h2 class="sub-titles">More Resources</h2>
+    <div class="body-style">
+    <p class="body-text">
+    Need more help? Below is an image of the molecules in all three states of matter: Solid, Liquid, and Gas. Each image leads to a video or a website that will explain more about the three states of matter. Explore by clicking on each of the yellow squares to find out more. Have fun!
+    </p>
+    </div>
+    <!-- img, or image tags, create images in the webpage. "src" tells the tag where to find the image. The images are uploaded into an "images" folder in this repl, so the "./" tells the tag to look for the image within this repl. The word after the slash is the file name in which the image is located,  in this case, the "images" folder. Then the image name and file type are written after that. Next, there is an alternate text in case the image cannot load, meaning that the user can at least know what the image was.-->
+    <!--The difference between class and id is that even though id is also used to identify tags, it can only be applied to one tag per id.-->
+    <img id="pic" src="./images/resource.png" alt="States of Matter Drawing" usemap="#solids">
+    <!-- This image also has a image map assigned to it, along with a map name-->
+    <!--the image map can detect where on the image the user has clicked, allowing certain parts of the image to be linked to different resources, instead of one link per image.-->
+    <map name="solids">
+      <!-- This shape is one area where the user can click. The shape is a rectangle. The two coordinates identify the top left and bottom right corners of the rectangle, creating an area where a link can be applied.-->
+      <area shape="rect" coords="10, 125, 430, 390" alt="solid-rect" href="https://www.youtube.com/watch?v=JQ4WduVp9k4&ab_channel=SmileandLearn-English" target="blank">
+      <!-- The alt text provides alternate text for the map in case it doesn't work-->
+      <area shape="rect" coords="480, 115, 890, 380" alt="liquid-rect" href="https://www.chem.purdue.edu/gchelp/atoms/states.html" target="blank">
+      <!--There is a link that will open when the user clicks in this certain map area identified for this link.-->
+      <area shape="rect" coords="930, 120, 1340, 385" alt="gas-rect" href ="https://www.youtube.com/watch?v=wclY8F-UoTE&ab_channel=FreeSchool" target="blank">
+      <!-- The target identifies where this link will be opened. In this case, the link will open in a blank/new tab.-->
+    </map>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="sub-titles">Feedback</h2>
+    <p class="body-text">Please tell us what you think about this webpage.</p>
+    <div class="button-style">
+    <button id="feedback1" class="buttons">It was great! I learned so much!</button>
+    <button id="feedback2"class="buttons">It needs improvement.</button>
+    </div>
+    <!--Input tags create a space where the user can input something for the program to process. The standard input type is text, so this tag will create a space for the user to input text.-->
+    <p><input id="improvement"></p>
+    <button id="submit">Submit Improvement Request</button>
+    <p id="reveal" class="italics"></p>
+    <br>
+    <br>
+    <!-- Footers go at the bottom of webpages and can include information like the author name, date of creation, date of publication, links, email addresses, etc. Anything really.-->
+    <footer id="footer">
+      <p id="footer-text">Created by: Muhammad Hashir Durrani. Updated: April 8th, 2021</p>
+    </footer>
+    <!-- The script tag reads everything in the HTML and to see if anything is connected to a Javascript function or event listener. It goes right before the closing body tag to ensure that it read all the HTML tags. Otherwise, it may miss some Javascript functions.-->
+    <script src="script.js"></script>
+  </body>
+</html>
